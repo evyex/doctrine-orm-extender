@@ -46,6 +46,10 @@ class QueryFactory
 
     private function processJoins(QueryBuilder $qb, Expr\Join $join): void
     {
+        if (null === $join->getAlias()) {
+            throw new QueryFactoryUnexpectedValueException('Join alias cannot be null');
+        }
+
         $fn = strtolower($join->getJoinType()).'Join';
         $qb->{$fn}(
             $join->getJoin(),
