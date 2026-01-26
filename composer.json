@@ -1,5 +1,6 @@
 {
     "name": "evyex/doctrine-orm-extender",
+    "description": "Extension for Doctrine ORM.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -15,7 +16,7 @@
     ],
     "require": {
         "php": "^8.1",
-        "doctrine/orm": ">=2.10.0"
+        "doctrine/orm": "^2.10|^3.0"
     },
     "scripts": {
         "cs-fix": "php-cs-fixer fix",

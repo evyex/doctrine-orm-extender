@@ -12,6 +12,9 @@ use Doctrine\ORM\Query\Parameter;
 
 interface RuleSetInterface
 {
+    /**
+     * @return class-string
+     */
     public function getEntityClass(): string;
 
     /**
