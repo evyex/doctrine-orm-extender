@@ -1,0 +1,6 @@
+# Exclude development and CI files from `git archive` artifacts.
+.github/ export-ignore
+.gitignore export-ignore
+Makefile export-ignore
+phpstan.neon export-ignore
+.php-cs-fixer.dist.php export-ignore
